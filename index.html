@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes</title>
+    <script src="https://kit.fontawesome.com/3925538669.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Wet+Paint&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="menu">
+        <h1><i class="fas fa-sticky-note"></i> Notes</h1>
+
+        <div class="menu-buttons">
+            <button class="add icon"><i class="fas fa-plus"></i></button>
+            <button class="delete-all icon"><i class="fas fa-trash-alt"></i> Delete all</button>
+        </div>
+    </div>
+
+    <div class="note-area">
+        <div class="note example-one">
+
+            <div class="note-header">
+                <h3 class="note-title">Household Chores</h3>
+                <button class="delete-note">
+                    <i class="fas fa-times icon"></i>
+                </button>
+            </div>
+            <div class="note-body">Walk Laura's dog afternoon and clean upstairs bathroom</div>
+            
+        </div>
+        <div class="note example-two">
+
+            <div class="note-header">
+                <h3 class="note-title">School</h3>
+                <button class="delete-note">
+                    <i class="fas fa-times icon"></i>
+                </button>
+            </div>
+            <div class="note-body">Study Analytic Geometry for tomorrow's exam </div>
+            
+        </div>
+        <div class="note example-three">
+
+            <div class="note-header">
+                <h3 class="note-title">Work</h3>
+                <button class="delete-note">
+                    <i class="fas fa-times icon"></i>
+                </button>
+            </div>
+            <div class="note-body">Show up to boss office 11/09/2025</div>
+            
+        </div>
+        <div class="note example-four">
+
+            <div class="note-header">
+                <h3 class="note-title">Shopping</h3>
+                <button class="delete-note">
+                    <i class="fas fa-times icon"></i>
+                </button>
+            </div>
+            <div class="note-body">Buy eggs, carrots, almond milk and Nescafe Coffee</div>
+            
+        </div>
+    </div>
+
+    <div class="note-panel">
+        <h2>add note</h2>
+        <select name="" id="category">
+            <option value="0" disabled selected>Note category</option>
+            <option value="1">Shopping</option>
+            <option value="1">Work</option>
+            <option value="1">Household Chores</option>
+            <option value="1">School</option>
+            <option value="1">Important</option>
+            <option value="1">Other</option>
+        </select>
+        <textarea id="text" placeholder="Note description..."></textarea>
+        <div class="error">You do not wanna add empty note. Right?</div>
+        <div class="panel-buttons">
+            <button class="icon save"><i class="fas fa-save"></i> Save</button>
+            <button class="icon cancel"><i class="fas fa-window-close"></i> Cancel</button>
+        </div>
+
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
